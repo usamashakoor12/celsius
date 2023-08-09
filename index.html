@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Modification</title>
+</head>
+<body>
+    <h1> Create a program that converts each 
+        temperature to Fahrenheit using the formula
+         (Celsius * 9/5) + 32 and stores the results in a new array.
+         Then, print both the Celsius and Fahrenheit arrays side by side.</h1>
+         <button onclick="celsius()">Click here</button>
+         <h2 id="output"></h2>
+
+         <script>
+            var show=document.getElementById("output")
+            function celsius(){
+                show.innerHTML="";
+                var cel=[25,30,18,22,28];
+                var Fahrenheit=[];
+                for(let i=0; i<cel.length; i++){
+                Fahrenheit = (cel[i]*9/5)+32;
+                    show.innerHTML+=`Celsius:${cel[i]}= Fahrenheit:${Fahrenheit} <br>`
+            }
+        }
+         </script>
+</body>
+</html>
